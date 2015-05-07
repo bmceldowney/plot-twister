@@ -1,0 +1,13 @@
+﻿:: Start
+<<set $started = true>>
+Here is the start.
+
+[[Go on|go]]
+
+
+:: go
+You're here!
+
+<<if $started>>And you've started!<<endif>>
+
+

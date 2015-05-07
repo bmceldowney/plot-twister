@@ -1,0 +1,18 @@
+{
+  "name": "plot-twister",
+  "version": "1.0.0",
+  "description": "An API for displaying and handling interactive fiction in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -C --recursive -R dot -b ./test"
+  },
+  "author": "Ben McEldowney",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.0.1",
+    "rewire": "^2.3.1"
+  }
+
+}
