@@ -1,3 +1,4 @@
+/*@flow*/
 var storyParser = require('./storyParser');
 var passage = {};
 
@@ -6,25 +7,25 @@ var passage = {};
  * @return {string} the passage content
  */
 passage.getContent = function () {
-	var text = this._parser.parse(this._data, this._context);
+  var text = this._parser.parse(this._data, this._context);
 
-	return text;
+  return text;
 };
 
 passage.getLinks = function () {
-	return this._data.links;
+  return this._data.links;
 };
 
 function get (data, context) {
-	var instance = Object.create(passage);
+  var instance = Object.create(passage);
 
-	instance._data = data;
-	instance._context = context;
-	instance._parser = storyParser.get();
+  instance._data = data;
+  instance._context = context;
+  instance._parser = storyParser.get();
 
-	return instance;
+  return instance;
 }
 
 module.exports = {
-	get: get
+  get: get
 };

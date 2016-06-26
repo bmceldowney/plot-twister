@@ -1,3 +1,4 @@
+/*@flow*/
 var parseExpression = function (expression) {
   var operatorMap = {
     to  : '=',

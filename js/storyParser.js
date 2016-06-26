@@ -1,3 +1,4 @@
+/*@flow*/
 var parser = {};
 
 var parsers = {
@@ -38,8 +39,8 @@ parser.getResolver = function (context) {
 function get (options) {
   var instance = Object.create(parser);
 
-	options = options || {};
-	instance.showLinkText = options.showLinkText || false;
+  options = options || {};
+  instance.showLinkText = options.showLinkText || false;
 
   return instance;
 }

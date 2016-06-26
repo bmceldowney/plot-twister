@@ -1,3 +1,4 @@
+/*@flow*/
 var parser = require('./parser');
 
 function parse(macro, context) {
